@@ -1,0 +1,25 @@
+[package]
+name = "ksm-society-sim"
+version = "0.1.0"
+authors = ["kianenigma <kian@parity.io>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+codec = { package = "parity-scale-codec", version = "2.0.0", default-features = false, features = ["derive"] }
+
+sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "kiz-wtf-society" }
+sp-core = { git = "https://github.com/paritytech/substrate", branch = "kiz-wtf-society" }
+
+frame-support = { git = "https://github.com/paritytech/substrate", branch = "kiz-wtf-society" }
+frame-system = { git = "https://github.com/paritytech/substrate", branch = "kiz-wtf-society" }
+pallet-society = { git = "https://github.com/paritytech/substrate", branch = "kiz-wtf-society" }
+pallet-balances = { git = "https://github.com/paritytech/substrate", branch = "kiz-wtf-society" }
+
+remote-externalities = { git = "https://github.com/paritytech/substrate", branch = "kiz-wtf-society" }
+
+sub-tokens = { git = "https://github.com/paritytech/substrate-debug-kit", branch = "master" }
+tokio = { version = "0.2.2", features = ["macros"] }
+hex-literal = "0.3.1"
+env_logger = "0.8.0"
