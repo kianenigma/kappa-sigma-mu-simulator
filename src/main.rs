@@ -118,7 +118,7 @@ async fn main() -> () {
 				// parent of https://polkascan.io/kusama/block/6480000
 				.into(),
 		),
-		uri: "http://substrate-archive-0.parity-vpn.parity.io:9933/".to_string(),
+		uri: "http://localhost:9943".to_string(),
 		cache: Some(remote_externalities::CacheConfig {
 			directory: ".".to_string(),
 			name: "kusama@6480000".to_string(),
